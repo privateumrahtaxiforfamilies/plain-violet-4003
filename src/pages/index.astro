@@ -5,46 +5,2255 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Umrah Taxi for Families - Premium Umrah Taxi Services in Saudi Arabia</title>
+    <meta name="description" content="Premium private transportation services for families performing Umrah in Saudi Arabia. Luxury vehicles, experienced drivers, and complete pilgrimage support.">
+    <meta name="keywords" content="Umrah taxi, family transportation Saudi Arabia, Jeddah airport transfer, Madinah taxi service, pilgrimage transport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mb-5 {
+            margin-bottom: 3rem;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1589088318634-aaaf1c4a170b');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 180px 0;
+            position: relative;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            animation: fadeInDown 1s ease;
+        }
+        header p {
+            font-size: 1.4rem;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            animation: fadeIn 1.5s ease;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: #f39c12;
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-btn:hover {
+            background-color: #d35400;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+        
+        /* Navigation */
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.9);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        .logo span {
+            color: #f39c12;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            margin-left: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #f39c12;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background-color: white;
+        }
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background: #f39c12;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        .service-card {
+            background: #ffffff;
+            padding: 50px 40px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            border: 1px solid #eee;
+        }
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-color: #f39c12;
+        }
+        .service-card i {
+            font-size: 4.5rem;
+            color: #f39c12;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+        }
+        .service-card:hover i {
+            transform: scale(1.1);
+        }
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .service-card p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+        .learn-more {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .learn-more:hover {
+            color: #d35400;
+            transform: translateX(5px);
+        }
+        .learn-more i {
+            font-size: 1rem;
+            margin-left: 8px;
+            transition: all 0.3s ease;
+        }
+        .learn-more:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Detailed Description Section */
+        .detailed-description {
+            padding: 100px 0;
+            background-color: #f4f4f4;
+        }
+        .description-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        .description-text {
+            flex: 1;
+        }
+        .description-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+        .description-text p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #555;
+        }
+        .description-text ul {
+            margin-bottom: 35px;
+            padding-left: 20px;
+        }
+        .description-text li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #555;
+            position: relative;
+            padding-left: 30px;
+        }
+        .description-text li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #f39c12;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .highlight-box {
+            background-color: #fff9e6;
+            border-left: 4px solid #f39c12;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box p {
+            font-style: italic;
+            color: #7d6608;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        .description-image {
+            flex: 1;
+            position: relative;
+        }
+        .description-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            transition: all 0.4s ease;
+        }
+        .description-image:hover img {
+            transform: scale(1.02);
+        }
+        .image-caption {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: #f39c12;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Fleet Section */
+        .fleet {
+            padding: 100px 0;
+            background-color: white;
+        }
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .vehicle-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+        }
+        .vehicle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .vehicle-image {
+            height: 220px;
+            overflow: hidden;
+        }
+        .vehicle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        .vehicle-card:hover .vehicle-image img {
+            transform: scale(1.1);
+        }
+        .vehicle-details {
+            padding: 25px;
+        }
+        .vehicle-details h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .vehicle-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .spec-item {
+            display: flex;
+            align-items: center;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        .spec-item i {
+            margin-right: 5px;
+            color: #f39c12;
+        }
+        .vehicle-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #f39c12;
+            margin-bottom: 15px;
+        }
+        .vehicle-price span {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        .book-btn {
+            display: inline-block;
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+        .book-btn:hover {
+            background-color: #d35400;
+        }
+        
+        /* Pilgrimage Guide Section */
+        .guide {
+            padding: 100px 0;
+            background-color: #f4f4f4;
+        }
+        .guide-container {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+        }
+        .guide-nav {
+            flex: 0 0 300px;
+            position: sticky;
+            top: 120px;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .guide-nav h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+        .guide-menu {
+            list-style: none;
+        }
+        .guide-menu li {
+            margin-bottom: 15px;
+        }
+        .guide-menu a {
+            display: block;
+            color: #555;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .guide-menu a:hover, .guide-menu a.active {
+            background: #fef5e7;
+            color: #f39c12;
+        }
+        .guide-menu a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        .guide-content {
+            flex: 1;
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .guide-section {
+            margin-bottom: 60px;
+            scroll-margin-top: 120px;
+        }
+        .guide-section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+        .guide-section h3 {
+            font-size: 1.6rem;
+            margin: 30px 0 20px;
+            color: #34495e;
+        }
+        .guide-section p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .guide-section ul {
+            margin-bottom: 25px;
+            padding-left: 25px;
+        }
+        .guide-section li {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.1rem;
+            position: relative;
+            padding-left: 25px;
+        }
+        .guide-section li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: #f39c12;
+            border-radius: 50%;
+        }
+        .note-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .note-box h4 {
+            color: #2980b9;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .tip-box {
+            background: #e8f8f0;
+            border-left: 4px solid #27ae60;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .tip-box h4 {
+            color: #27ae60;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1519817650390-64a93db51149') center/cover fixed;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        .testimonials .container {
+            position: relative;
+            z-index: 1;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .testimonial-card {
+            background: #ffffff;
+            padding: 40px 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: left;
+            position: relative;
+            border: 1px solid #eee;
+        }
+        .testimonial-card::before {
+            content: '\f10d';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 3rem;
+            color: rgba(243, 156, 18, 0.1);
+            z-index: 0;
+        }
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        .testimonial-card p {
+            font-size: 1.1rem;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 3px solid #f39c12;
+        }
+        .author-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .author-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .author-info p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin: 0;
+            font-style: normal;
+        }
+        .rating {
+            color: #f39c12;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background-color: #f4f4f4;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .pricing-header {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+        .pricing-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .pricing-header .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .pricing-header .duration {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .pricing-features {
+            padding: 30px;
+        }
+        .pricing-features ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+        .pricing-features li i {
+            margin-right: 10px;
+            color: #f39c12;
+        }
+        .pricing-footer {
+            padding: 0 30px 30px;
+            text-align: center;
+        }
+        .popular-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background-color: white;
+        }
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .faq-question {
+            padding: 20px 25px;
+            background: #f9f9f9;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+        }
+        .faq-question:hover {
+            background: #f1f1f1;
+        }
+        .faq-question i {
+            transition: all 0.3s ease;
+        }
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-answer p {
+            padding: 20px 0;
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .faq-item.active .faq-question {
+            background: #f39c12;
+            color: white;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1519817650390-64a93db51149') center/cover fixed;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .contact .section-title {
+            color: white;
+        }
+        .contact .section-title::after {
+            background: #f39c12;
+        }
+        .contact .section-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #f39c12;
+            background: rgba(255,255,255,0.2);
+        }
+        .form-control::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: #f39c12;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .submit-btn:hover {
+            background: #d35400;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 15px 25px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        .contact-item:hover {
+            background: rgba(243, 156, 18, 0.2);
+            transform: translateY(-5px);
+        }
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #f39c12;
+        }
+        
+        /* Booking Section */
+        .booking {
+            padding: 100px 0;
+            background-color: #f4f4f4;
+        }
+        .booking-container {
+            display: flex;
+            gap: 60px;
+        }
+        .booking-form-container {
+            flex: 1;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .booking-form h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .form-col {
+            flex: 1;
+        }
+        .booking-info {
+            flex: 0 0 400px;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            padding: 50px;
+            border-radius: 15px;
+            color: white;
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+        .booking-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+        .booking-info ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .booking-info li {
+            margin-bottom: 20px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        .booking-info li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 1.2rem;
+        }
+        .info-box {
+            background: rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        /* Map Section */
+        .map {
+            height: 500px;
+            position: relative;
+        }
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(20%) contrast(110%);
+        }
+        .map-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: white;
+            text-align: center;
+        }
+        .map-overlay h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        .map-overlay p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 70px 0 30px;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: #f39c12;
+        }
+        .footer-col p {
+            margin-bottom: 20px;
+            color: #bbb;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        .footer-links a:hover {
+            color: #f39c12;
+            transform: translateX(5px);
+        }
+        .footer-links a i {
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background: #f39c12;
+            transform: translateY(-5px);
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 1200px) {
+            header h1 {
+                font-size: 3.5rem;
+            }
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .description-content, .guide-container, .booking-container {
+                flex-direction: column;
+            }
+            .guide-nav, .booking-info {
+                position: static;
+                flex: 1;
+                width: 100%;
+            }
+            header h1 {
+                font-size: 2.8rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            .section-title {
+                font-size: 2.2rem;
+            }
+            .contact-form {
+                padding: 30px;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 120px 0;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .service-grid, .fleet-grid, .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 576px) {
+            header {
+                padding: 100px 0;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .cta-btn {
+                padding: 15px 30px;
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .service-card, .testimonial-card, .pricing-card {
+                padding: 30px 20px;
+            }
+            .guide-content, .booking-form-container, .booking-info {
+                padding: 30px 20px;
+            }
+            .contact-form {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Umrah<span>Taxi</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#guide">Pilgrimage Guide</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="container">
+            <h1>Private Umrah Taxi for Families</h1>
+            <p>Private Umrah Taxi for Families – Experience the most comfortable, reliable, and spiritually supportive transportation services across Saudi Arabia. We specialize in providing private Umrah taxi for families, ensuring a premium, family-friendly journey with expert guidance to the holy cities. Let us make your sacred trip seamless and stress-free.</p>
+            <a href="#booking" class="cta-btn">Begin Your Spiritual Journey</a>
+            <div class="scroll-down" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title text-center">Our Comprehensive Umrah Transportation Services: Private Umrah Taxi for Families</h2>
+            <p class="section-subtitle text-center">We offer a complete range of transportation solutions tailored specifically for families and groups performing Umrah, ensuring comfort, safety, and spiritual convenience throughout your pilgrimage.</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-car-side"></i>
+                    <h3>Family-Oriented Vehicle Fleet</h3>
+                    <p>Our premium fleet includes spacious Hyundai Staria (7-9 seats), Toyota Camry (4-5 seats), and luxury GMC Yukon vehicles (7 seats), all equipped with modern amenities to ensure maximum comfort during your sacred journey between Makkah, Madinah, and Jeddah.</p>
+                    <a href="#fleet" class="learn-more">View Fleet Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-plane-arrival"></i>
+                    <h3>Airport Transfer Excellence</h3>
+                    <p>Professional meet-and-greet services at all major airports including King Abdulaziz International (Jeddah), Prince Mohammad bin Abdulaziz (Madinah), and Taif International. We handle luggage and provide child seats to ensure a seamless transition to your accommodation.</p>
+                    <a href="#booking" class="learn-more">Book Airport Transfer <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-kaaba"></i>
+                    <h3>Complete Umrah Transportation</h3>
+                    <p>Comprehensive point-to-point services covering all Umrah rituals: from your hotel to Masjid al-Haram, between Safa and Marwa, to Mina, Arafat, and Muzdalifah during Hajj season. Our drivers are trained in pilgrimage protocols and optimal routes.</p>
+                    <a href="#guide" class="learn-more">Learn About Umrah <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hotel & Ziyarat Transfers</h3>
+                    <p>Reliable transportation between your hotel and the holy mosques at all prayer times, plus visits to significant Islamic sites including Jabal al-Nour, Jannat al-Mu'alla, Masjid al-Qiblatain, and Quba Mosque with knowledgeable driver-guides.</p>
+                    <a href="#guide" class="learn-more">Explore Ziyarat Sites <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Female-Friendly Services</h3>
+                    <p>Special arrangements for female pilgrims and families including female drivers (upon request), privacy partitions, and vehicles exclusively for women's groups. We maintain the highest standards of modesty and comfort for all passengers.</p>
+                    <a href="#contact" class="learn-more">Request Female Driver <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>VIP Concierge Services</h3>
+                    <p>Premium package including dedicated vehicle and driver for your entire stay, Zamzam water provision, prayer timing reminders, and assistance with Ihram points. We also offer mobile WiFi and charging ports in all vehicles.</p>
+                    <a href="#pricing" class="learn-more">View VIP Packages <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Description -->
+    <section class="detailed-description">
+        <div class="container">
+            <div class="description-content">
+                <div class="description-text">
+                    <h2>Why Our Comprehensive Umrah Transportation Services with Private Umrah Taxi for Families Stand Apart</h2>
+                    <p>At Our Comprehensive Umrah Transportation Services, we understand that your Umrah pilgrimage is a profoundly spiritual journey that requires more than just transportation from point A to point B. With our private Umrah taxi for families, we ensure a service built on three pillars: reverence for your ibadah, comfort for your family, and reliability you can trust.</p>
+                    
+                    <p>We go beyond basic taxi services by offering:</p>
+                    <ul>
+                        <li>Drivers trained in Islamic etiquette who understand the sacred nature of your journey</li>
+                        <li>Vehicles thoroughly cleaned and perfumed with non-alcoholic fragrances</li>
+                        <li>Qibla indicators and prayer time alerts in all vehicles</li>
+                        <li>Child safety seats and booster seats available at no extra charge</li>
+                        <li>24/7 multilingual customer support (Arabic, English, Urdu, Malay)</li>
+                        <li>Flexible booking options including hourly, daily, and complete pilgrimage packages</li>
+                        <li>Transparent pricing with no hidden fees or surge pricing during peak times</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p>"Our drivers undergo special training in Umrah rituals and etiquette to ensure they provide not just transportation, but meaningful support for your spiritual journey. Many are locals with deep knowledge of the holy cities."</p>
+                    </div>
+                    
+                    <p>We maintain our vehicles to the highest standards, with:</p>
+                    <ul>
+                        <li>Daily deep cleaning and sanitization</li>
+                        <li>Regular mechanical inspections by certified technicians</li>
+                        <li>Comprehensive insurance coverage for all passengers</li>
+                        <li>GPS tracking and real-time monitoring for safety</li>
+                    </ul>
+                </div>
+                <div class="description-image">
+                    <img src="https://images.unsplash.com/photo-1597045551941-1a5423994774" alt="Luxury Umrah Taxi Service in Saudi Arabia">
+                    <div class="image-caption">Family Umrah Transportation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet" id="fleet">
+        <div class="container">
+            <h2 class="section-title text-center">Our Premium Vehicle Fleet</h2>
+            <p class="section-subtitle text-center">Choose from our selection of modern, comfortable, and family-friendly vehicles designed specifically for Umrah pilgrims</p>
+            
+            <div class="fleet-grid">
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://taxiserviceksa.com/wp-content/uploads/2025/03/Hyundai-Staria.webp" alt="Hyundai Staria for Umrah">
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>Hyundai Staria</h3>
+                        <div class="vehicle-specs">
+                            <span class="spec-item"><i class="fas fa-users"></i> 7-9 passengers</span>
+                            <span class="spec-item"><i class="fas fa-suitcase"></i> 6 large bags</span>
+                            <span class="spec-item"><i class="fas fa-snowflake"></i> AC Zones</span>
+                        </div>
+                        <div class="vehicle-price">
+                            SAR 850 <span>/Per Day With Fuel and Driver
+</span>
+                        </div>
+                        <p>Ideal for large families with ample legroom and sliding doors for easy access near the Haram.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=966501729282&text=I+would+like+to+book+Hyundai+Staria+with+fuel+and+driver+for+800+SR+per+day&type=phone_number&app_absent=0" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://taxiserviceksa.com/wp-content/uploads/2025/03/Toyota-Camry-full-view.webp" alt="Toyota Camry for Umrah">
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>Toyota Camry</h3>
+                        <div class="vehicle-specs">
+                            <span class="spec-item"><i class="fas fa-users"></i> 4-5 passengers</span>
+                            <span class="spec-item"><i class="fas fa-suitcase"></i> 3 large bags</span>
+                            <span class="spec-item"><i class="fas fa-tachometer-alt"></i> Fuel Efficient</span>
+                        </div>
+                        <div class="vehicle-price">
+                            SAR 850 <span>/Per Day With Fuel and Driver</span>
+                        </div>
+                        <p>Perfect for small families or couples with premium comfort for city transfers.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=966501729282&text=I+would+like+to+book+Toyota+Camry+with+fuel+and+driver+for+800+SR+per+day&type=phone_number&app_absent=0" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://taxiserviceksa.com/wp-content/uploads/2025/03/GMC-Yukon-full-view.webp" alt="GMC Yukon for Umrah">
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>GMC Yukon XL</h3>
+                        <div class="vehicle-specs">
+                            <span class="spec-item"><i class="fas fa-users"></i> 7 passengers</span>
+                            <span class="spec-item"><i class="fas fa-suitcase"></i> 8 large bags</span>
+                            <span class="spec-item"><i class="fas fa-shield-alt"></i> Premium Safety</span>
+                        </div>
+                        <div class="vehicle-price">
+                            SAR 800 <span>/Per Day With Fuel and Driver</span>
+                        </div>
+                        <p>Luxury SUV with enhanced safety features and superior comfort for long distances.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=966501729282&text=I+would+like+to+book+GMC+Yukon+with+fuel+and+driver+for+800+SR+per+day&type=phone_number&app_absent=0" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://taxiserviceksa.com/wp-content/uploads/2025/03/Toyota-Hiace-side-view.webp" alt="VIP Umrah Transportation">
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>Toyota Hiace</h3>
+                        <div class="vehicle-specs">
+                            <span class="spec-item"><i class="fas fa-user-tie"></i> Dedicated Driver</span>
+                            <span class="spec-item"><i class="fas fa-wifi"></i> Mobile WiFi</span>
+                            <span class="spec-item"><i class="fas fa-star"></i> Premium Service</span>
+                        </div>
+                        <div class="vehicle-price">
+                            SAR 1500 <span>/Per Day With Fuel and Driver
+</span>
+                        </div>
+                        <p>Exclusive vehicle with additional amenities for discerning pilgrims.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=966501729282&text=I+would+like+to+book+Toyota+Hiace+with+fuel+and+driver+for+1500+SR+per+day&type=phone_number&app_absent=0" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilgrimage Guide Section -->
+    <section class="guide" id="guide">
+        <div class="container">
+            <h2 class="section-title text-center">Umrah Pilgrimage Transportation Guide</h2>
+            <p class="section-subtitle text-center">Essential information for pilgrims regarding transportation during your sacred journey</p>
+            
+            <div class="guide-container">
+                <div class="guide-nav">
+                    <h3>Navigation</h3>
+                    <ul class="guide-menu">
+                        <li><a href="#arrival" class="active"><i class="fas fa-plane"></i> Airport Arrival</a></li>
+                        <li><a href="#makkah-transport"><i class="fas fa-kaaba"></i> Makkah Transport</a></li>
+                        <li><a href="#madinah-transport"><i class="fas fa-mosque"></i> Madinah Transport</a></li>
+                        <li><a href="#between-cities"><i class="fas fa-route"></i> Between Cities</a></li>
+                        <li><a href="#hajj-season"><i class="fas fa-calendar-alt"></i> Hajj Season</a></li>
+                        <li><a href="#accessibility"><i class="fas fa-wheelchair"></i> Accessibility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="guide-content">
+                    <div class="guide-section" id="arrival">
+                        <h2>Airport Arrival Procedures</h2>
+                        <p>Your Umrah journey begins the moment you land in Saudi Arabia. We've streamlined the arrival process to ensure a smooth transition from airport to your accommodation.</p>
+                        
+                        <h3>At King Abdulaziz International Airport (Jeddah)</h3>
+                        <p>Our representative will meet you at the arrivals hall with a clearly visible sign bearing your name. They will assist with:</p>
+                        <ul>
+                            <li>Luggage collection and cart provision</li>
+                            <li>Guidance through customs and immigration</li>
+                            <li>Transition to your pre-cooled vehicle</li>
+                            <li>Provision of Zamzam water and light refreshments</li>
+                        </ul>
+                        
+                        <div class="note-box">
+                            <h4>Important Note</h4>
+                            <p>Flight delays are common. Rest assured, we monitor all incoming flights and adjust pickup times accordingly at no extra charge.</p>
+                        </div>
+                        
+                        <h3>At Prince Mohammad bin Abdulaziz Airport (Madinah)</h3>
+                        <p>For pilgrims arriving directly in Madinah, our service includes:</p>
+                        <ul>
+                            <li>Direct transfer to your hotel near Masjid an-Nabawi</li>
+                            <li>Brief orientation about important sites in Madinah</li>
+                            <li>Assistance with Ihram preparation if proceeding to Makkah</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guide-section" id="makkah-transport">
+                        <h2>Transportation in Makkah</h2>
+                        <p>Navigating Makkah during Umrah requires special consideration due to the sacred nature of the sites and the large number of pilgrims.</p>
+                        
+                        <h3>To/From Masjid al-Haram</h3>
+                        <p>We provide:</p>
+                        <ul>
+                            <li>Drop-off at designated points closest to your gate (based on your hotel location)</li>
+                            <li>Pickup coordination via WhatsApp or phone call after prayers</li>
+                            <li>Real-time traffic updates to avoid congestion, especially during peak prayer times</li>
+                        </ul>
+                        
+                        <h3>Safa to Marwa Transportation</h3>
+                        <p>For elderly or physically challenged pilgrims, we offer:</p>
+                        <ul>
+                            <li>Special wheelchair-accessible vehicles</li>
+                            <li>Coordination with Haram wheelchair services</li>
+                            <li>Priority pickup after Sa'i</li>
+                        </ul>
+                        
+                        <div class="tip-box">
+                            <h4>Pro Tip</h4>
+                            <p>Book our 'Prayer Time Package' for guaranteed timely transportation to all five daily prayers at the Haram.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-section" id="madinah-transport">
+                        <h2>Transportation in Madinah</h2>
+                        <p>Madinah's transportation needs differ from Makkah, with more focus on ziyarat (visitation) to historical Islamic sites.</p>
+                        
+                        <h3>Masjid an-Nabawi Transportation</h3>
+                        <p>Our services include:</p>
+                        <ul>
+                            <li>Pre-dawn (Fajr) transportation for Rawdah visits</li>
+                            <li>Special arrangements for women's groups</li>
+                            <li>Cooling-off periods in vehicles between prayers during extreme heat</li>
+                        </ul>
+                        
+                        <h3>Ziyarat Tours</h3>
+                        <p>We offer comprehensive ziyarat transportation packages covering:</p>
+                        <ul>
+                            <li>Quba Mosque - with opportunity to pray 2 rak'ah</li>
+                            <li>Qiblatain Mosque - site of the qibla change</li>
+                            <li>Uhud Mountain and Martyrs' Cemetery</li>
+                            <li>Dates market with shopping assistance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guide-section" id="between-cities">
+                        <h2>Transportation Between Holy Cities</h2>
+                        <p>The journey between Makkah and Madinah (approximately 450km) is a significant part of your pilgrimage experience.</p>
+                        
+                        <h3>Makkah to Madinah Transfer</h3>
+                        <p>Our service features:</p>
+                        <ul>
+                            <li>Comfort stops at designated mawaqit (Ihram stations)</li>
+                            <li>Prayer time accommodations</li>
+                            <li>Scenic route options through the mountains</li>
+                            <li>Restroom break coordination</li>
+                        </ul>
+                        
+                        <h3>Madinah to Jeddah Airport Transfer</h3>
+                        <p>For your return journey, we provide:</p>
+                        <ul>
+                            <li>Flight-time adjusted departure</li>
+                            <li>Luggage handling assistance</li>
+                            <li>Final Zamzam water provisions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guide-section" id="hajj-season">
+                        <h2>Hajj Season Transportation</h2>
+                        <p>During the Hajj period (Dhu al-Hijjah), transportation requires special planning and permits.</p>
+                        
+                        <h3>Mina, Arafat, and Muzdalifah</h3>
+                        <p>We offer (with proper Hajj permits):</p>
+                        <ul>
+                            <li>Pre-Hajj transportation to Mina</li>
+                            <li>Arafat day transfer with essential supplies</li>
+                            <li>Muzdalifah overnight arrangements</li>
+                            <li>Return transportation after stoning rituals</li>
+                        </ul>
+                        
+                        <div class="note-box">
+                            <h4>Important Notice</h4>
+                            <p>Hajj transportation services must be booked at least 3 months in advance due to government permit requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-section" id="accessibility">
+                        <h2>Accessibility Services</h2>
+                        <p>We are committed to making Umrah accessible to all pilgrims, regardless of physical ability.</p>
+                        
+                        <h3>Wheelchair Accessible Vehicles</h3>
+                        <p>Our accessible fleet includes:</p>
+                        <ul>
+                            <li>Rampequipped vans with securement systems</li>
+                            <li>Trained drivers in disability assistance</li>
+                            <li>Coordination with Haram accessibility services</li>
+                        </ul>
+                        
+                        <h3>Elderly Pilgrim Assistance</h3>
+                        <p>Special services for senior pilgrims:</p>
+                        <ul>
+                            <li>Door-to-door assistance</li>
+                            <li>Medical emergency protocols</li>
+                            <li>Priority pickup services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Pilgrim Experiences</h2>
+            <p class="section-subtitle text-center">Hear from families who have used our transportation services during their Umrah journey</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As a family with three young children, we were apprehensive about transportation during Umrah. This service exceeded all expectations. The child seats were clean and properly installed, and the driver was exceptionally patient with our schedule. The vehicle was always cool and comfortable, even during peak heat."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed K.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Ahmed K.</h4>
+                                <p>Family of 5, from Dubai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The female driver service was a blessing for my mother and I. We felt completely comfortable throughout our journey. The driver knew all the best times to visit the Rawdah and helped us navigate the crowds. Her knowledge of dua spots in Madinah enriched our experience tremendously."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fatima S.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Fatima S.</h4>
+                                <p>Mother & Daughter, from London</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Our elderly father uses a wheelchair, and we were concerned about transportation. The accessible van was perfect, and the driver's assistance at the Haram was invaluable. They coordinated perfectly with the mosque's wheelchair services, making our father's Umrah as smooth as possible."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Mohammed R.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Mohammed R.</h4>
+                                <p>Family Group, from Karachi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The VIP package was worth every riyal! Having a dedicated vehicle and driver for our 2-week stay allowed us to focus completely on our ibadah. The mobile WiFi was a bonus for staying connected with family back home. The driver's knowledge of prayer times and less crowded entrances saved us hours."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Yusuf B.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Yusuf B.</h4>
+                                <p>Business Executive, from Kuala Lumpur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Our flight arrived at 3am, but the driver was waiting with a smile. The vehicle was stocked with water and dates - such a thoughtful touch after a long flight. Throughout our Umrah, the punctuality and professionalism were exceptional. Will definitely use again for our next visit."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Aisha M.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Aisha M.</h4>
+                                <p>Family of 4, from Toronto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As first-time Umrah performers, we appreciated how the drivers guided us through each step. From explaining the best times to visit the Haram to suggesting quiet spots for dua, they enhanced our spiritual experience. The vehicles were always immaculately clean and smelled beautiful."</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Omar H.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Omar H.</h4>
+                                <p>New Muslims, from New York</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title text-center">Transparent Pricing Packages</h2>
+            <p class="section-subtitle text-center">Choose the package that best suits your family's Umrah transportation needs</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Package</h3>
+                        <div class="price">SAR 000</div>
+                        <div class="duration">per day</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 8 hours service per day</li>
+                            <li><i class="fas fa-check"></i> Toyota Camry or similar</li>
+                            <li><i class="fas fa-check"></i> Airport transfer (one way)</li>
+                            <li><i class="fas fa-check"></i> Hotel to Haram transfers</li>
+                            <li><i class="fas fa-check"></i> English speaking driver</li>
+                            <li><i class="fas fa-times"></i> Ziyarat tours not included</li>
+                            <li><i class="fas fa-times"></i> No waiting time between trips</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://api.whatsapp.com/send/?phone=966501729282&text=I+would+like+to+book+Toyota+Camry+with+fuel+and+driver+for+800+SR+per+day&type=phone_number&app_absent=0" class="book-btn">Book Basic Package</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Family Package</h3>
+                        <div class="price">SAR 800</div>
+                        <div class="duration">per day</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 12 hours service per day</li>
+                            <li><i class="fas fa-check"></i> Hyundai Staria or similar</li>
+                            <li><i class="fas fa-check"></i> Roundtrip airport transfer</li>
+                            <li><i class="fas fa-check"></i> Unlimited Haram transfers</li>
+                            <li><i class="fas fa-check"></i> Two ziyarat tours included</li>
+                            <li><i class="fas fa-check"></i> Child seats available</li>
+                            <li><i class="fas fa-check"></i> 2 hours waiting time daily</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://api.whatsapp.com/send/?phone=966501729282&text=I+would+like+to+book+Hyundai+Staria+with+fuel+and+driver+for+800+SR+per+day&type=phone_number&app_absent=0" class="book-btn">Book Family Package</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>VIP Package</h3>
+                        <div class="price">SAR 800</div>
+                        <div class="duration">per day</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 24/7 dedicated vehicle</li>
+                            <li><i class="fas fa-check"></i> Luxury GMC Yukon XL</li>
+                            <li><i class="fas fa-check"></i> Premium meet & greet</li>
+                            <li><i class="fas fa-check"></i> Unlimited all transfers</li>
+                            <li><i class="fas fa-check"></i> Full ziyarat program</li>
+                            <li><i class="fas fa-check"></i> Mobile WiFi hotspot</li>
+                            <li><i class="fas fa-check"></i> Unlimited waiting time</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://api.whatsapp.com/send/?phone=966501729282&text=I+would+like+to+book+GMC+Yukon+with+fuel+and+driver+for+800+SR+per+day&type=phone_number&app_absent=0" class="book-btn">Book VIP Package</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <p><strong>Note:</strong> All prices include VAT and insurance. Minimum booking period is 3 days. Discounts available for groups and extended stays.</p>
+                <a href="https://api.whatsapp.com/send/?phone=966501729282" class="learn-more" style="color: #f39c12; font-size: 1.1rem;">Request Custom Quote <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            <p class="section-subtitle text-center">Find answers to common questions about our Umrah transportation services</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What documents do I need to provide when booking?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For booking, we require copies of all passengers' passports and visa documents. For Hajj season transportation, we also need copies of your Hajj permits. All documents can be securely uploaded through our booking portal or sent via encrypted email.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How far in advance should I book transportation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2-3 weeks in advance for Umrah transportation, especially during peak seasons (Ramadan, school holidays). For Hajj season transportation, bookings should be made at least 3 months in advance due to permit requirements and limited availability.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your cancellation policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cancellations made more than 7 days before service receive a full refund. Between 7-3 days before, we refund 50%. Less than 3 days before service, no refund is provided but we offer rescheduling based on availability. Hajj season cancellations have different terms outlined in your contract.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide car seats for children?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide clean, certified child safety seats and boosters at no additional cost. Please specify the ages and weights of your children when booking so we can provide the appropriate seats. You're also welcome to bring your own seats if preferred.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I recognize my driver at the airport?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your driver will be waiting in the arrivals hall holding a sign with your name. We will send you a photo of your driver and their contact information 24 hours before your arrival. All our drivers wear uniform shirts with our logo for easy identification.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What if my flight is delayed?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We monitor all incoming flights and adjust pickup times automatically at no extra charge. Our drivers receive real-time flight updates and will be there when you arrive, even if delayed. For extreme delays (over 5 hours), we may need to arrange a substitute driver.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I request a female driver?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we do not have female drivers available, especially for women's groups. </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is Zamzam water provided?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our vehicles are stocked with chilled, authentic Zamzam water. For VIP packages, we provide larger 10L containers. If you need additional Zamzam for your return flight, we can assist with purchasing and packing authorized quantities.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What safety measures do you have in place?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All vehicles undergo daily safety checks and are equipped with first aid kits. Drivers are trained in emergency response. We use GPS tracking with real-time monitoring of all journeys. Vehicles are sanitized between each booking with hospital-grade disinfectants.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I change my booking after arrival?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we understand plans may change during your pilgrimage. You can upgrade your package at any time (subject to availability). For downgrades or reductions in service, our standard cancellation policy applies. Our 24/7 support team can assist with any changes needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title text-center">Book Your Umrah Transportation</h2>
+            <p class="section-subtitle text-center">Complete the form below to reserve your vehicles for a seamless pilgrimage experience</p>
+            
+            <div class="booking-container">
+                <div class="booking-form-container">
+                    <form class="booking-form" id="transportation-form">
+                        <h2>Personal Information</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="full-name">Full Name *</label>
+                                    <input type="text" id="full-name" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="nationality">Nationality *</label>
+                                    <input type="text" id="nationality" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="phone">WhatsApp Number *</label>
+                                    <input type="tel" id="phone" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2>Trip Details</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="arrival-date">Arrival Date *</label>
+                                    <input type="date" id="arrival-date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="departure-date">Departure Date *</label>
+                                    <input type="date" id="departure-date" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="arrival-airport">Arrival Airport *</label>
+                                    <select id="arrival-airport" class="form-control" required>
+                                        <option value="">Select Airport</option>
+                                        <option value="JED">King Abdulaziz International (Jeddah)</option>
+                                        <option value="MED">Prince Mohammad bin Abdulaziz (Madinah)</option>
+                                        <option value="TIF">Taif International Airport</option>
+                                        <option value="other">Other (please specify)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="flight-number">Flight Number</label>
+                                    <input type="text" id="flight-number" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="passenger-count">Number of Passengers *</label>
+                            <input type="number" id="passenger-count" class="form-control" min="1" max="15" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicle-type">Preferred Vehicle Type *</label>
+                            <select id="vehicle-type" class="form-control" required>
+                                <option value="">Select Vehicle</option>
+                                <option value="camry">Toyota Camry (4-5 passengers)</option>
+                                <option value="staria">Hyundai Staria (7-9 passengers)</option>
+                                <option value="yukon">GMC Yukon XL (7 passengers)</option>
+                                <option value="vip">VIP Package (dedicated luxury vehicle)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" class="form-control" rows="4" placeholder="Child seats, wheelchair accessibility, female driver, etc."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">Submit Booking Request</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="booking-info">
+                    <h3>Booking Information</h3>
+                    
+                    <div class="info-box">
+                        <p><i class="fas fa-info-circle"></i> After submitting this form, you'll receive a confirmation email with payment instructions within 24 hours.</p>
+                    </div>
+                    
+                    <ul>
+                        <li>All bookings require a 30% deposit to confirm</li>
+                        <li>Balance payable upon arrival in Saudi Arabia</li>
+                        <li>We accept credit cards, bank transfer, and PayPal</li>
+                        <li>Booking confirmation includes driver contact details</li>
+                        <li>24/7 customer support during your pilgrimage</li>
+                    </ul>
+                    
+                    <h3>Why Book With Us?</h3>
+                    <ul>
+                        <li>Official licensed Umrah transportation provider</li>
+                        <li>10+ years serving pilgrims from 35+ countries</li>
+                        <li>100% refund guarantee if visa denied</li>
+                        <li>Flexible cancellation policy</li>
+                        <li>Competitive prices with no hidden fees</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Our Pilgrimage Team</h2>
+            <p class="section-subtitle text-center">Have questions about your Umrah transportation? Our team is available 24/7 to assist you.</p>
+            
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-subject">Subject *</label>
+                    <input type="text" id="contact-subject" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-message">Your Message *</label>
+                    <textarea id="contact-message" class="form-control" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group" style="text-align: center;">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+            
+            <div class="contact-info">
+                <a href="tel:+96501729282" class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+966501729282</span>
+                </a>
+                
+                <a href="https://taxiserviceksa.com/" target="_blank" class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <span>taxiserviceksa.com</span>
+                </a>
+                
+                <a href="mailto:info@taxiserviceksa.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@taxiserviceksa.com</span>
+                </a>
+                
+                <a href="https://sites.google.com/view/private-umrah-taxi-families/home" target="_blank" class="contact-item">
+                    <i class="fas fa-link"></i>
+                    <span>Umrah Transportation Info</span>
+                </a>
+                
+                <a href="https://wa.me/966501729282" target="_blank" class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Chat</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.444538509682!2d39.81757841541686!3d21.42306988571291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c4888e1f91%3A0x9a9a9a9a9a9a9a9a!2sMakkah%20Al-Mukarramah%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map-overlay">
+            <h3>Service Areas in Saudi Arabia</h3>
+            <p>We provide premium transportation services throughout Makkah, Madinah, Jeddah, and Taif, covering all major airports, hotels, and holy sites.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Umrah Taxi Services</h3>
+                    <p>Providing premium, family-friendly transportation for pilgrims in Saudi Arabia since 2010. Our mission is to make your spiritual journey comfortable, safe, and memorable.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#fleet"><i class="fas fa-chevron-right"></i> Our Fleet</a></li>
+                        <li><a href="#guide"><i class="fas fa-chevron-right"></i> Pilgrimage Guide</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://api.whatsapp.com/send/?phone=966501729282"><i class="fas fa-chevron-right"></i> Airport Transfers</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=966501729282"><i class="fas fa-chevron-right"></i> Umrah Transportation</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=966501729282"><i class="fas fa-chevron-right"></i> Ziyarat Tours</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=966501729282"><i class="fas fa-chevron-right"></i> Hotel Transfers</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=966501729282"><i class="fas fa-chevron-right"></i> VIP Services</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=966501729282"><i class="fas fa-chevron-right"></i> Hajj Transportation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Head Office: Prince Sultan Rd, Makkah, Saudi Arabia</p>
+                    <p><i class="fas fa-phone-alt"></i> +966 50 172 9282</p>
+                    <p><i class="fas fa-envelope"></i> info@taxiserviceksa.com</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Service</p>
+                    <p><i class="fas fa-file-alt"></i> <a href="#" style="color: #bbb;">Terms & Conditions</a></p>
+                    <p><i class="fas fa-shield-alt"></i> <a href="#" style="color: #bbb;">Privacy Policy</a></p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Private Transportation for Families. All Rights Reserved. | Ministry of Hajj and Umrah Licensed Operator #SA-789456123</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+                
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+        
+        // Smooth Scrolling for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 992) {
+                        navLinks.style.display = 'none';
+                    }
+                }
+            });
+        });
+        
+        // Form Submission
+        const bookingForm = document.getElementById('transportation-form');
+        const contactForm = document.querySelector('.contact-form');
+        
+        if (bookingForm) {
+            bookingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your booking request! Our team will contact you within 24 hours to confirm your reservation.');
+                this.reset();
+            });
+        }
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! Our customer service team will respond to your inquiry within 12 hours.');
+                this.reset();
+            });
+        }
+        
+        // Sticky Navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.fixed-nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(0,0,0,0.95)';
+                nav.style.padding = '10px 0';
+            } else {
+                nav.style.background = 'rgba(0,0,0,0.9)';
+                nav.style.padding = '15px 0';
+            }
+        });
+        
+        // Scroll Reveal Animation
+        window.addEventListener('scroll', revealOnScroll);
+        
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.service-card, .vehicle-card, .testimonial-card, .pricing-card, .guide-section, .faq-item');
+            
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveals[i].getBoundingClientRect().top;
+                const revealPoint = 150;
+                
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].style.opacity = '1';
+                    reveals[i].style.transform = 'translateY(0)';
+                }
+            }
+        }
+        
+        // Initialize elements as hidden
+        document.addEventListener('DOMContentLoaded', function() {
+            const elementsToAnimate = document.querySelectorAll('.service-card, .vehicle-card, .testimonial-card, .pricing-card, .guide-section, .faq-item');
+            elementsToAnimate.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+            });
+            
+            // Trigger initial check
+            revealOnScroll();
+        });
+    </script>
+</body>
 </html>
